@@ -52,4 +52,3 @@ fetch next 10 rows only
 
 
 --JOINS, Stored Procedures, Scalar Function, DateTime operations, Trigggers. 
-
