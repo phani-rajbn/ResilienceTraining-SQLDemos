@@ -69,3 +69,10 @@ Select Publisher.PublisherName, Book.Title from publisher left join book on Publ
 --Right Joins: U get all the data from the right and only matching data from the left.
 Select Publisher.PublisherName, Book.Title from publisher right join book on Publisher.PubId = Book.PubId
 
+---Full joins are going to get the data of both the tables irrespective of its equivalence. 
+Select b.BookId, b.Title, P.PublisherName from book b full join Publisher P on b.PubId = p.PubId
+
+--If U want only data from left or right tables and exclude rows that are common to both...
+Select b.BookId, b.Title, P.PublisherName from book b full join Publisher P on b.PubId = p.PubId
+WHERE b.BookId is null or p.PubId is null;
+
